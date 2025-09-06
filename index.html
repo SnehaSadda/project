@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Motivation Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 AI Motivation Generator</h1>
+
+    <!-- User name -->
+    <label for="name">Your name (optional)</label>
+    <input id="name" placeholder="e.g. Sneha" />
+
+    <!-- Category selection -->
+    <label for="category">Choose category</label>
+    <select id="category">
+      <option value="general">General Motivation</option>
+      <option value="study">Study / Exam Motivation</option>
+      <option value="fitness">Fitness / Energy</option>
+      <option value="mindfulness">Mindfulness / Calm</option>
+    </select>
+
+    <!-- Button + save option -->
+    <div class="actions">
+      <button id="generateBtn">Get Motivation</button>
+      <label class="save">
+        <input type="checkbox" id="saveCheckbox" /> Save to my sheet
+      </label>
+    </div>
+
+    <!-- Display result -->
+    <div id="result" class="result">
+      <p id="quote">Click the button to get a motivational quote!</p>
+      <p id="meta" class="meta"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
